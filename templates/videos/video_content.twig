@@ -1,0 +1,48 @@
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="container-fluid customRow">
+        </div>
+        <!--</div>-->
+        <div class="col-lg-12">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="reviewHeadingLink singleVideoHeading">{{video[0]['name']}}</h3>
+                        <p style="color:#333333;">{{video[0]['deck']}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="{{video[0]['embed_player']}}"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-lg-12">
+                    <img class="img img-responsive" src="{{video[0]['images'][3]}}" height="168" alt="">
+                    <div class="col-lg-12 videoDetailsHeading">
+                        <h3 class="videoHeading">Video Details</h3>
+                    </div>
+                    <div class="col-lg-12 videosDescriptionScreen">
+                        <h4>Title</h4>
+                        <p>{{video[0]['name']}}</p>
+                        <h4>Release Date </h4>
+                        <span>{{video[0]['publish_date']|date("m/d/Y")}}</span>
+                        <h4>Video Type </h4>
+                        <span>{{video[0]['video_type']}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-9">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->

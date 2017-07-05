@@ -1,0 +1,55 @@
+{% include 'common/header.twig' %}
+
+<div class="container">
+    <div class="col-lg-12">
+        <div class="col-lg-10 gbox">
+
+            <ul class="nav nav-tabs  ">
+                <li class="active  col-lg-5 col-xs-12"><a data-toggle="tab" href="#home">{{ game['name'] }}</a></li>
+                <li class="col-lg-2 col-xs-12"><a data-toggle="tab" href="#menu1">Summary</a></li>
+                <li class="col-lg-2 col-xs-12"><a data-toggle="tab" href="#menu2">Images</a></li>
+                <li class="col-lg-2 col-xs-12"><a data-toggle="tab" href="#menu3">Comments</a></li>
+                <li class="col-xs-12">&nbsp;</li>
+            </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active col-lg-6">
+                    <h3>{{ game[0]['name'] }}</h3>
+                </div>
+                <div id="menu1" class="tab-pane fade ">
+                    <div class="col-lg-12">
+                        <h3>Summary</h3>
+                        {% if game[0]['description'] is empty %}
+                            <p>There is no available description</p>
+                        {% elseif game[0]['description'] %}
+                            <p class="paragraph_background">{{ game[0]['description']|striptags }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Images</h3>
+                    <div class="col-lg-6 image_holder">
+                        <img class="img img-responsive" width="250px" src="{{game[0]['images'][4]}}" alt="">
+                    </div>
+                </div>
+                <div id="menu3" class="tab-pane fade col-lg-6">
+                    <h3>Comments</h3>
+                    {% if game[0]['comments'] is empty %}
+                        <p>There are no available comments</p>
+                    {% elseif game[0]['comments'] %}
+                        <p>{{ game[0]['comments'] }}</p>
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/assets/js/readmore.js"></script>
+<script src="/assets/js/readmore.min.js"></script>
+<script>
+    $('.description').readmore();
+</script>
+{% include 'common/footer.twig' %}

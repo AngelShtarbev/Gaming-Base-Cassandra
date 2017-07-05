@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=cyrillic,cyrillic-ext,latin-ext');
+*{padding: 0;margin: 0;}
+body{font-family: 'Roboto', sans-serif;font-size: 18px;font-weight: 300;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7dff2+0,feffff+100 */
+background: #d7dff2; /* Old browsers */
+background: -moz-linear-gradient(top,  #d7dff2 0%, #feffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #d7dff2 0%,#feffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #d7dff2 0%,#feffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7dff2', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+}
+.wrapper{margin:0 auto;}
+.navbar-inverse{
+	height:100px;
+	background-color:whitesmoke;
+	outline: none;
+	color:black;
+	font-weight: 300;
+	font-size:18px;
+	border:none;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+.navbar-inverse .navbar-brand{
+	font-size:23px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	padding:23px;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+	padding-top:23px;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+	color:orange;
+}
+.navbar-inverse .navbar-brand:hover{
+	color:black;
+}
+.navbar-inverse .navbar-nav>li>a{
+	color:black;
+	font-size:20px;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+}
+.carousel{
+	margin-top:30px;
+}
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.effect1{
+	 -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+.over{
+	display: block;
+	outline: none;
+}
+/*INDEX VIEW START*/
+.reviewIndexDescription{
+    color:#333333;
+}
+.thumbnail{
+    height:250px;
+}
+/*NAVIGATION*/
+#navigation{
+
+}
+.navbar-brand {
+  padding:5px;
+}
+.navbar-brand > img{
+  box-sizing: border-box;
+}
+/*PLATFORMS MENU RIGHT*/
+.platforms{
+  background-color: white;
+}
+.platforms > h2{
+  border-bottom: 5px solid orange;
+  padding-bottom: 5px;
+}
+.platforms ul{
+  list-style: none;
+  font-size: 20px;
+}
+.platforms ul li > a{
+  padding-left:10px;
+  color:#333333;
+  font-weight: 400;
+  text-decoration: none;
+}
+.platforms ul li > a:hover{
+  color:darkorange;
+}
+/*LATEST VIDEOS*/
+.latestVideosHeading{
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  padding-bottom: 0;
+  padding-top:20px;
+  height:70px;
+  margin-bottom: 10px;
+  margin-top:0;
+  padding-left:10px;
+  border-bottom:2px solid darkorange;
+}
+.videoHeadingCaption > a{
+  text-decoration: none;
+  cursor: pointer;
+  color:#333333;
+}
+.caption{
+}
+.caption > p{
+  font-size:15px;
+  font-weight: 500;
+}
+.videoHoverThumbnail{
+  text-decoration: none;
+}
+/*LATEST REVIEWS*/
+.reviewHeading{
+  padding-top:11px;
+  padding-left:11px;
+}
+/*FOOTER*/
+.footerBackground{
+  background-color: #333333;
+  color:white;
+  padding-top:10px;
+}
+.footerContent p{
+  font-size:15px;
+}
+.footerContent p > a{
+  text-decoration: none;
+  color:darkorange;
+  cursor: pointer;
+  padding-right:3px;
+  padding-left:3px;
+}
+/*NAVIGATION*/
+.navbar-default .navbar-nav>li>a{
+  color:#333333;
+}
+.navbar-nav>li>a:hover{
+  color:darkorange !important;
+}
+/*GAMES PREVIEW VIEW START*/
+.gamesRenderList > h4{
+    margin-top:3px;
+}
+.gamesDate{
+    margin-left:5px;
+    font-size:16px;
+}
+.gameDescription{
+    font-size:16px;
+}
+/*SINGLE GAME VIEW*/
+.gameDetailsPanel{
+    margin-top:15px;
+    background-color: white;
+}
+.gameDetailsPanel > h2{
+    border-bottom: 5px solid orange;
+    padding-bottom: 5px;
+}
+.gameDetailsPanelList{
+    list-style: none;
+}
+.gameDetailsPanelList > li{
+    margin-top: 1px;
+}
+.gameDetailsPanelListHeadings{
+    color:#333333;
+    font-weight: 500;
+}
+.gameDetailsPanelListDescription{
+    font-size:16px;
+}
+.gameHeadingPanel{
+    height:200px;
+}
+.gameHeadingPanel h2 , p{
+    color:white;
+}
+.gameTabVideosList{
+    list-style: none;
+    font-size: 15px;
+}
+.spanTab{
+    padding-left:5px;
+}
+.gameTabVideosList > li > a{
+    text-decoration: none;
+    color:#444444;
+}
+.gameTabVideosList > li > a:hover{
+    color:darkorange;
+}
+/*PLATFORMS START VIEW*/
+.gamesRenderList > p{
+    color:#444444;
+}
+.platformsList{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444444;
+    padding-bottom:5px;
+}
+.platformsNameLink{
+    color:#444444;
+}
+.platformsNameLink:hover{
+    text-decoration: none;
+    color:darkorange;
+}
+/*REVIEWS START VIEW */
+
+.reviewDescription{
+    color:#444444;
+}
+.reviewHeadingLink > a{
+    text-decoration: none;
+    color:#444444;
+}
+.reviewHeadingLink > a:hover{
+    color:darkorange;
+}
+.reviewSingleHeading{
+    padding-bottom: 10px;
+    border-bottom: 2px solid orangered;
+}
+/*VIDEOS START VIEW*/
+.videosList{
+    border-bottom: 2px solid #444444;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+.videosDescription{
+    color:#444444;
+    font-size:15px;
+}
+/*VIDEO SINGLE VIEW*/
+.singleVideoHeading{
+    border-bottom: 2px solid orangered;
+    padding-bottom:5px;
+}
+.videoTitle{
+    color:#333333;
+    font-weight: 400;
+}
+.videoDetailsHeading{
+    background-color: #F60;
+}
+.videoDetailsHeading > h3{
+    color:white;
+    text-align: center;
+    margin:10px;
+    text-transform: uppercase;
+    font-size:16px;
+}
+.videoHeading{
+    padding:0;
+}
+.videosDescriptionScreen{
+    padding-top:10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.videosDescriptionScreen > h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.videosDescriptionScreen > p{
+    font-size: 16px;
+    color: #808080;
+}
+.videosDescriptionScreen > span{
+    padding-top:3px;
+    font-size: 16px;
+    color:#808080;
+}
+/*UTILITY CLASSES AND HELPERS*/
+
+.customRow{
+    height:60px;
+    background-color:#333333;
+    margin-bottom:20px;
+}
+.dropdownMenuContainer{
+    background-color: darkorange;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.buttonDropdownMenuContainer{
+    border: none;
+    padding:10px;
+    background-color: #ff6700;
+}
+.buttonDropdownMenuContainer:hover{
+    background-color: black;
+    color:darkorange;
+}
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+    background-color: orangered;
+}
+.customHR{
+    margin-top:70px;
+    margin-bottom: 10px;
+    color:black;
+    height:2px;
+    width: 100%;
+    background-color: #333333;
+}
+.customDivider{
+    color:purple;
+    height:2px;
+    width: 100%;
+    background-color: #b4bbbd;
+}
+.pagination{
+    margin-top:15px;
+}
+.ratingStars{
+    color:darkred;
+}
+.ratingsReviews{
+    padding-left:0 !important;
+ }
+.customRating{
+    color:cornflowerblue;
+}
+.pictureClass{
+    margin-bottom:10px;
+}
